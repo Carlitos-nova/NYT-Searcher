@@ -4,7 +4,7 @@
   "description": "",
   "engines": {
     "node": "8.11.3",
-    "yarn": "1.10.1"
+    "npm": "6.4.1"
   },
   "main": "server.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
-    "install": "cd client && yarn install",
+    "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
